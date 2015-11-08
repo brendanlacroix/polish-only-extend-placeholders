@@ -1,0 +1,27 @@
+/* should fail */
+.something-bad-to-extend {
+  color: red;
+}
+.evil-class {
+  @extend .something-bad-to-extend;
+
+  .bad {
+    @extend .something-bad-to-extend;
+  }
+}
+#forever .bad {
+  @extend .something-bad-to-extend;
+}
+
+/* should pass */
+%something-good-to-extend {
+  color: green;
+}
+
+.cool-really-good-selector {
+  @extend %something-good-to-extend;
+
+  .nested {
+    @extend %something-good-to-extend;
+  }
+}

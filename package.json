@@ -1,0 +1,20 @@
+{
+  "name": "polish-only-extend-placeholders",
+  "version": "1.0.0",
+  "description": "Polish plugin to prevent using `@extend` with anything but `%placeholders`.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendanlacroix/polish-only-extend-placeholders.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/intern-client config=tests/intern"
+  },
+  "author": "Brendan LaCroix <brendanlacroix@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gonzales-pe": "git://github.com/brendanlacroix/gonzales-pe.git",
+    "intern": "^3.0.6"
+  }
+}
